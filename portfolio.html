@@ -1,0 +1,232 @@
+<!DOCTYPE html> 
+<html lang="pt-br" class="scroll-smooth"> 
+
+<head>
+    <meta charset="UTF-8"> 
+    <title>Portfólio</title> 
+
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <script>
+    tailwind.config = {
+        theme: {
+            extend: {
+                keyframes: {
+                    bounceGlow: {
+                        '0%, 100%': { transform: 'translateY(0)', color: '#df73ff' },
+                        '50%': { transform: 'translateY(0px)', color: '#4b0082' }
+                    }
+                },
+                animation: {
+                    bounceGlow: 'bounceGlow 3s infinite'
+                }
+            }
+        }
+    }
+    </script>
+    <style>
+        body {
+            background-color: #ffffff;
+
+            background-image: url("data:image/svg+xml,%3Csvg width='100' height='100' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cpolygon points='20,10 25,18 15,18' fill='%23d1d5db' fill-opacity='0.3'/%3E%3C/svg%3E");
+
+            background-size: 40px 40px; 
+
+            animation: moveTriangles 3s linear infinite; 
+        }
+
+        @keyframes moveTriangles {
+            from {
+                background-position: 0 0;
+            }
+            to {
+                background-position: 100px 100px;
+            }
+        }
+
+        ::-webkit-scrollbar {
+            display: none;
+        }
+
+        html {
+            scrollbar-width: none;
+        }
+
+        body {
+            overflow-x: hidden;
+        }
+
+    </style>
+</head>
+
+<body>
+    <section class="h-screen flex items-center justify-center">
+        
+        <div class="text-center">
+        <div class="text-center">
+      
+        <p class="text-lg text-gray-600 mb-2">
+            Eae galera, tudo certo? Bem-vindos ao meu Portfólio! 👋
+        </p>
+
+        <h1 class="text-3xl md:text-5xl font-bold tracking-[-0em]">
+            Meu nome é
+        </h1>
+        
+        <h1 class="text-3xl md:text-5xl font-bold tracking-[-0.12em]">
+
+            <span class="animate-bounceGlow inline-block" style="animation-delay: 0s;">C</span>
+            <span class="animate-bounceGlow inline-block" style="animation-delay: 0.05s;">h</span>
+            <span class="animate-bounceGlow inline-block" style="animation-delay: 0.1s;">r</span>
+            <span class="animate-bounceGlow inline-block" style="animation-delay: 0.15s;">i</span>
+            <span class="animate-bounceGlow inline-block" style="animation-delay: 0.2s;">s</span>
+            <span class="animate-bounceGlow inline-block" style="animation-delay: 0.25s;">t</span>
+            <span class="animate-bounceGlow inline-block" style="animation-delay: 0.3s;">i</span>
+            <span class="animate-bounceGlow inline-block" style="animation-delay: 0.35s;">a</span>
+            <span class="animate-bounceGlow inline-block" style="animation-delay: 0.4s;">n</span>
+
+            <span class="animate-bounceGlow inline-block" style="animation-delay: 0.45s;"></span>
+            
+            <span class="animate-bounceGlow inline-block" style="animation-delay: 0.5s;">R</span>
+            <span class="animate-bounceGlow inline-block" style="animation-delay: 0.55s;">i</span>
+            <span class="animate-bounceGlow inline-block" style="animation-delay: 0.6s;">c</span>
+            <span class="animate-bounceGlow inline-block" style="animation-delay: 0.65s;">a</span>
+            <span class="animate-bounceGlow inline-block" style="animation-delay: 0.7s;">r</span>
+            <span class="animate-bounceGlow inline-block" style="animation-delay: 0.75s;">t</span>
+            <span class="animate-bounceGlow inline-block" style="animation-delay: 0.8s;">h</span>,
+        </h1>
+        
+        <h1 class="text-3xl md:text-5xl font-bold tracking-[-0em]">
+            mas pode me chamar de 
+        </h1>
+            
+        <h1 class="text-3xl md:text-5xl font-bold tracking-[-0.12em]"> 
+        <span>
+            <span class="animate-bounceGlow inline-block" style="animation-delay: 0.85s;">C</span>
+            <span class="animate-bounceGlow inline-block" style="animation-delay: 0.9s;">h</span>
+            <span class="animate-bounceGlow inline-block" style="animation-delay: 0.95s;">r</span>
+            <span class="animate-bounceGlow inline-block" style="animation-delay: 1s;">i</span>
+            <span class="animate-bounceGlow inline-block" style="animation-delay: 1.05s;">s</span>
+        </span>!
+        </h1>
+
+        <div class="mt-8">
+
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-4 justify-items-center">
+
+            <a href="#quem" class="block">
+                <div class="bg-white border border-purple-400 p-6 rounded-lg hover:bg-purple-100 shadow-md hover:shadow-lg transition">
+                    <h2 class="font-bold mb-2">Quem sou eu?</h2>
+                    <div class="w-full h-[1px] bg-purple-400 mb-3"></div>
+                    <p>Um pouquinho de mim.</p>
+                </div>
+            </a>
+
+            <a href="#projetos" class="block">
+                <div class="bg-white border border-purple-400 p-6 rounded-lg hover:bg-purple-100 shadow-md hover:shadow-lg transition">
+                    <h2 class="font-bold mb-2">Projetos</h2>
+                    <div class="w-full h-[1px] bg-purple-400 mb-3"></div>
+                    <p>Todos meus repositórios do GitHub e um pouco mais.</p>
+                </div>
+            </a>
+
+            <a href="#contatos" class="block">
+                <div class="bg-white border border-purple-400 p-6 rounded-lg hover:bg-purple-100 shadow-md hover:shadow-lg transition">
+                    <h2 class="font-bold mb-2">Contato</h2>
+                    <div class="w-full h-[1px] bg-purple-400 mb-3"></div>
+                    <p>Entre em contato comigo!</p>
+                </div>
+            </a>
+
+            </div>
+
+        </div>
+
+    </div>
+        <p class="mt-10 text-gray-500 animate-bounce">
+        ↓ role para ver mais
+    </p>
+            
+    </section>
+
+    <section class="min-h-screen px-6 py-20">
+
+        <div id="quem" class="max-w-4xl mx-auto mb-20 scroll-mt-24">
+            
+            <h2 class="text-purple-500 font-bold mb-6 text-lg">
+                QUEM SOU EU?
+            </h2>
+
+            <div class="mb-6 flex justify-center">
+                <img src="https://media.licdn.com/dms/image/v2/D4D03AQHicSNAp2qggw/profile-displayphoto-crop_800_800/B4DZyfJqd2JEAI-/0/1772196638547?e=1775692800&v=beta&t=LlQObKyZPch_itCYCBtrq2YzZs5pBQhaUxfGmojRhpE" class="w-40 h-40 rounded-full object-cover border-2 border-purple-400">
+            </div>
+
+            <p class="text-gray-800 leading-relaxed">
+                <span class="font-bold">Opa!</span> Meu nome é <span class="text-purple-500">Christian Ricarth</span>, tenho 17 anos e estou fazendo Engenharia da Computação na Universidade Presbiteriana Mackenzie.
+                <br><br>
+                Desde sempre, fui muito ligado à área da tecnologia. Tenho curiosidade em entender como as coisas funcionam por trás das telas e gosto de explorar novas ideias e possibilidades. Entre tudo isso, acabei desenvolvendo uma afinidade ainda maior com Inteligência Artificial e robótica, áreas que me chamam muita atenção pelo potencial que têm de transformar o mundo.
+                <br><br>
+                Atualmente, estou sempre buscando novas oportunidades e conhecimentos que me ajudem a evoluir, tanto pessoal quanto profissionalmente. Um exemplo disso é que estou participando da EJEM (Empresa Júnior de Engenharia Mackenzie), onde espero me desafiar, aprender na prática e descobrir melhor minhas capacidades dentro da área.
+                <br><br>
+                No meu tempo livre, gosto bastante de jogar jogos com foco em história, daqueles que te prendem pela narrativa e te fazem pensar. Além disso, também gosto de escrever (inclusive, estou desenvolvendo um universo próprio de ficção científica).
+                <br><br>
+                Também dedico parte do meu tempo a estudar mais sobre Inteligência Artificial e Machine Learning, já que tenho um objetivo pessoal bem claro: no futuro, quero criar uma IA própria chamada <span class="text-purple-500">Mera</span>.
+            </p>
+
+        </div>
+
+        <div id="projetos" class="max-w-4xl mx-auto mb-20 scroll-mt-24">
+
+            <h2 class="text-purple-500 font-bold mb-6 text-lg">
+                PROJETOS
+            </h2>
+
+            <a href="https://github.com/ychrisx/portfolio" target="_blank"
+            class="block bg-white border border-purple-400 p-6 rounded-lg hover:bg-purple-100 transition">
+
+                <h3 class="text-purple-500 font-bold">ychrisx/portfolio</h3>
+                <p class="text-gray-700">Repositório deste portfólio. Dê uma olhada para ver como ele foi feito!</p>
+
+            </a>
+
+        </div>
+
+        <div id="contatos" class="max-w-4xl mx-auto mb-20 scroll-mt-24">
+
+            <h2 class="text-purple-500 font-bold mb-6 text-lg">
+                CONTATOS
+            </h2>
+
+            <div class="space-y-2 text-gray-800">
+
+                <p>GitHub: <a href="https://github.com/ychrisx" target="_blank" class="text-purple-500">@ychrisx</a></p>
+
+                <p>LinkedIn: <a href="https://www.linkedin.com/in/christian-otto-ricarth-678ba7181/" target="_blank"     class="text-purple-500">@christian-otto-ricarth</a></p>
+
+                <p>Discord: <a href="https://discord.com/users/593864174979776512" target="_blank" class="text-purple-500">@_ychris_</a></p>
+
+                <p>Instagram: <a href="https://www.instagram.com/_ychris_/" target="_blank" class="text-purple-500">@_ychris_</a></p>
+
+                <p>Email Pessoal: <a target="_blank"    class="text-purple-500">christian.ricarth@gmail.com</a></p>
+
+                <p>Email EJEM: <a target="_blank"    class="text-purple-500">christian.ricarth@ejemmackenzie.com</a></p>
+
+            </div>
+
+            <div class="mt-8 flex flex-col md:flex-row gap-4">
+
+                <a href="mailto:christian.ricarth@gmail.com"
+                class="bg-purple-500 text-white px-6 py-3 rounded-full text-center hover:bg-purple-600 transition">
+               Me mande um Email!
+                </a>
+
+            </div>
+
+        </div>
+
+    </section>
+    <footer class="w-full text-center py-6 text-gray-500 text-sm">
+        © yChrisx 2026
+    </footer>
+    </body>
+</html>
